@@ -1,0 +1,143 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Cairo', 'Tajawal', sans-serif;
+  background-color: #F2F2F2;
+  color: #222;
+  overflow-x: hidden;
+}
+
+/* Paper texture background */
+.paper-texture {
+  background-color: #F2F2F2;
+  background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' /%3E%3C/filter%3E%3Crect width='100' height='100' filter='url(%23noise)' opacity='0.05'/%3E%3C/svg%3E");
+}
+
+/* Red heading with blue underline */
+.section-title {
+  position: relative;
+  display: inline-block;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  right: 0;
+  width: 100%;
+  height: 12px;
+  background-color: #2E4A9E;
+  z-index: -1;
+}
+
+/* Large background number */
+.bg-number {
+  font-size: 180px;
+  font-weight: 800;
+  color: rgba(46, 74, 158, 0.08);
+  position: absolute;
+  top: 20px;
+  left: 40px;
+  z-index: 0;
+  line-height: 1;
+  font-family: 'Cairo', sans-serif;
+}
+
+@media (max-width: 768px) {
+  .bg-number {
+    font-size: 100px;
+    top: 10px;
+    left: 20px;
+  }
+}
+
+/* Blue vertical block decoration */
+.blue-block {
+  background-color: #2E4A9E;
+}
+
+/* Smooth scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F2F2F2;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2E4A9E;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #D71920;
+}
+
+/* Logo styling */
+.logo-text {
+  color: #D71920;
+  font-weight: 800;
+  font-size: 4rem;
+  letter-spacing: -2px;
+}
+
+.logo-dots {
+  color: #2E4A9E;
+}
+
+/* Image hover effect */
+.image-hover {
+  transition: transform 0.5s ease;
+}
+
+.image-hover:hover {
+  transform: scale(1.03);
+}
+
+/* Navigation active state */
+.nav-active {
+  position: relative;
+}
+
+.nav-active::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  right: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #D71920;
+}
+
+/* Stagger animation delay */
+.stagger-1 { animation-delay: 0.1s; }
+.stagger-2 { animation-delay: 0.2s; }
+.stagger-3 { animation-delay: 0.3s; }
+.stagger-4 { animation-delay: 0.4s; }
+.stagger-5 { animation-delay: 0.5s; }
+
+/* Container */
+.container-custom {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+@media (min-width: 1280px) {
+  .container-custom {
+    max-width: 1280px;
+  }
+}
