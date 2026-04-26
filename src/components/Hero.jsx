@@ -32,8 +32,7 @@ const Hero = () => {
         >
           <h1 className="text-7xl md:text-9xl font-extrabold text-primary-red drop-shadow-lg">
             القباني
-           <br />
-           <br />
+           <br /> 
            
           </h1>
           <div className="flex justify-center gap-2 mt-2">
@@ -44,19 +43,16 @@ const Hero = () => {
         </motion.div>
 
         {/* Title */}
-        {/* <motion.div
+        <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3 }}
           className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 md:p-12 max-w-3xl mx-auto border border-white/20"
         >
-          <h2 className="text-3xl md:text-5xl font-cairo font-bold text-white mb-4">
-            الملف التعريفي للشركة
-          </h2>
-          <span className="text-5xl md:text-7xl font-extrabold text-white/90">
-            2026
-          </span>
-        </motion.div> */}
+          <h4 className="text-3xl  md:text-5xl font-cairo font-bold text-white mb-4">   لانظمة العزل الحديث
+          </h4>
+  
+        </motion.div>
 
         {/* Scroll indicator */}
         <motion.div
@@ -64,9 +60,10 @@ const Hero = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1, duration: 0.5 }}
-          className="absolute bottom-10 left-1/2 -translate-x-1/2"
+          className="absolute left-1/2 -translate-x-1/2"
         >
           <motion.div
+          
             animate={{ y: [0, 10, 0] }}
             transition={{ repeat: Infinity, duration: 1.5 }}
             className="w-6 h-10 border-2 border-white/50 rounded-full flex justify-center pt-2"
