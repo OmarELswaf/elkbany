@@ -1,3 +1,4 @@
+import  aboutImg  from '../imgs/aboutImg.png';
 import { motion } from 'framer-motion';
 
 const About = () => {
@@ -18,7 +19,7 @@ const About = () => {
           >
             <div className="relative overflow-hidden rounded-lg shadow-2xl">
               <img
-                src="https://images.unsplash.com/photo-1565008576549-57569a49329e?w=800&q=80"
+                src={aboutImg}
                 alt="Company flags"
                 className="w-full h-[400px] md:h-[500px] object-cover image-hover"
               />
@@ -53,7 +54,7 @@ const About = () => {
               transition={{ duration: 0.6, delay: 0.3 }}
               className="text-5xl md:text-6xl font-cairo font-bold text-primary-red mb-8 section-title"
             >
-              من نحن
+              
             </motion.h2>
 
             {/* Description */}

@@ -1,6 +1,13 @@
 import { motion } from 'framer-motion';
 
 const Hero = () => {
+  const scrollDown = () => {
+    window.scrollBy({
+      top: window.innerHeight,
+      behavior: 'smooth'
+    });
+  };
+
   return (
     <section 
       id="hero" 
@@ -66,7 +73,8 @@ const Hero = () => {
           
             animate={{ y: [0, 10, 0] }}
             transition={{ repeat: Infinity, duration: 1.5 }}
-            className="w-6 h-10 border-2 border-white/50 rounded-full flex justify-center pt-2"
+            className="w-6 h-10 border-2 border-white/50 rounded-full flex justify-center pt-2 cursor-pointer hover:border-white transition-colors"
+            onClick={scrollDown}
           >
             <div className="w-1.5 h-3 bg-white/70 rounded-full"></div>
           </motion.div>

@@ -1,4 +1,6 @@
 import { motion } from 'framer-motion';
+import  Shippingcontainers  from '../imgs/Shippingcontainers.png';
+
 
 const supplyItems = [
   'مواد عزل المنشآت والاسطح والبدرومات وحمامات السباحة وخزانات المياه بمختلف أنواعها',
@@ -48,7 +50,7 @@ const Supplies = () => {
           >
             <div className="relative overflow-hidden rounded-lg shadow-2xl">
               <img
-                src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80"
+                src={Shippingcontainers}
                 alt="Shipping containers"
                 className="w-full h-[400px] md:h-[500px] object-cover image-hover"
               />

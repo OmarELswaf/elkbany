@@ -1,4 +1,7 @@
 import { motion } from 'framer-motion';
+import  Water  from '../imgs/Waterproof.png';
+import  Waterpr  from '../imgs/Waterproofing.png';
+
 
 const features = [
   'مقاومة تامة لتسربات المياه والرطوبة',
@@ -90,9 +93,9 @@ const Waterproofing = () => {
           >
             <div className="relative overflow-hidden rounded-lg shadow-xl mb-8">
               <img
-                src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80"
+                src={Water}
                 alt="Waterproofing work"
-                className="w-full h-[300px] object-cover image-hover"
+                className="w-full h-[300px] image-hover"
               />
             </div>
 
@@ -146,7 +149,7 @@ const Waterproofing = () => {
 
             <div className="relative overflow-hidden rounded-lg shadow-xl">
               <img
-                src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=800&q=80"
+                src={Waterpr}
                 alt="Waterproofing application"
                 className="w-full h-[250px] object-cover image-hover"
               />
@@ -177,10 +180,15 @@ const Waterproofing = () => {
                   variants={itemVariants}
                   className="flex items-center gap-3"
                 >
+                  
                   <span className="font-bold text-dark font-cairo">- {item}</span>
                 </motion.div>
               ))}
+
+              
             </motion.div>
+ 
+            
             <motion.div
               variants={containerVariants}
               initial="hidden"
@@ -198,10 +206,13 @@ const Waterproofing = () => {
                 </motion.p>
               ))}
             </motion.div>
+            
           </div>
         </motion.div>
+        
       </div>
     </section>
+    
   );
 };
 
